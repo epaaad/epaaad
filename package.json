@@ -1,0 +1,35 @@
+{
+  "name": "epaaad",
+  "version": "0.0.1",
+  "description": "Set of RTE related AngularJS modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "node ./example/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/epaaad/epaaad.git"
+  },
+  "keywords": [
+    "angularjs",
+    "text",
+    "rte",
+    "contenteditable"
+  ],
+  "author": {
+    "name": "Krzysztof Antczak",
+    "email": "iks@linux.pl",
+    "url": "https://github.com/epaaad"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/epaaad/epaaad/issues"
+  },
+  "homepage": "https://github.com/epaaad/epaaad",
+  "devDependencies": {
+    "browserify-middleware": "~2.3.0",
+    "express": "~3.4.8",
+    "domready": "~0.2.13"
+  }
+}

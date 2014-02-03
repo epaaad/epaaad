@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>EPAAAD</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="jquery.js"></script>
+    <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.10/angular.js" data-semver="1.2.10"></script>
+    <script src="bundle.js"></script>
+</head>
+
+<body ng-controller="MainCtrl">
+
+<div>
+
+    <p>hashtags (#hashtag): <span ng-repeat="hash in hashtags" style="margin-right: 9px; display: inline-block; padding: 2px 5px 2px 5px; background-color: orange;">{{ hash }}</span></p>
+    <p>users (@user): <span ng-repeat="user in usernames" style="margin-right: 9px; display: inline-block; padding: 2px 5px 2px 5px; background-color: #add8e6;">{{ user }}</span></p>
+
+    <button ng-click="toggleMarkers()">markers</button>
+    <button ng-click="toggleToolbar()">toolbar</button>
+    <div style="background-color: {{ color }}; width: 20px; height: 10px; display: inline-block"></div>
+    <hr />
+
+    <epaaad ng-model="content1"
+            keyup="stream(content)"
+            marker-color="color"
+            toolbar="toolbarState"
+            buttons="buttonsList"
+            autosave="{url: '/save', time: 4, key: 'data'}"
+            as-callback="save(document)"
+            onword="catchWord(word)">
+
+    </epaaad>
+    <!--<div id="preview" ng-bind-html="previewHtml('content1')"></div>-->
+    <!--<hr />-->
+    <!--<epaaad ng-model="name2" toolbar="true" autosave="{url: '/save', time: 4, key: 'data'}" onword="catchWord(word)"></epaaad>-->
+    <!--<div ng-bind-html="previewHtml('name2')"></div>-->
+    <!--<epaaad-toolbar buttons="buttonsList"></epaaad-toolbar>-->
+
+</div>
+
+</body>
+</html>
