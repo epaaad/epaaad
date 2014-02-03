@@ -36,15 +36,21 @@ This setup is using express and browserify middleware, so You can start hacking 
 
 ### NPM
 
-```todo...```
+```
+todo...
+```
 
 ### BOWER
 
-```todo...```
+```
+todo...
+```
 
 ### CDN
 
-```todo...```
+```
+todo...
+```
 
 ## Contribution
 
