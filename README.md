@@ -3,6 +3,8 @@ epaaad
 
 Set of [rich text editing](http://en.wikipedia.org/wiki/Online_rich-text_editor) related AngularJS modules and components
 
+![epaaad](_screens/epaaad.png "Epaaad Draft1")
+
 ## Introduction
 
 WARNING! This project is under HEAVY development and it's not even in alpha state.
