@@ -31,5 +31,11 @@
     "browserify-middleware": "~2.3.0",
     "express": "~3.4.8",
     "domready": "~0.2.13"
+  },
+  "dependencies": {
+    "shoe": "0.0.15",
+    "dnode": "~1.2.0",
+    "epaaad-rangy": "git://github.com/epaaad/epaaad-rangy.git",
+    "epaaad-sync": "git://github.com/epaaad/epaaad-sync.git"
   }
 }
